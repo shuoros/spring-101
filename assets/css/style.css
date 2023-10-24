@@ -1,0 +1,28 @@
+:root {
+    --gray: #EDEDED;
+    --secondary: #D2E9E3;
+}
+header {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 24px 80px;
+    height: auto;
+    border-bottom: 1px solid var(--gray);
+}
+header ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    padding: 9px 12px;
+    border-radius: 12px;
+}
+header ul .active{
+    background: var(--secondary);
+}
