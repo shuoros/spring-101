@@ -1,8 +1,10 @@
 :root {
+    --white: #FFF;
     --gray: #EDEDED;
     --secondary: #D2E9E3;
+    --light-black: #757575;
 }
-header {
+header .row-1 {
     display: flex;
     align-items: flex-start;
     align-self: stretch;
@@ -11,7 +13,7 @@ header {
     height: auto;
     border-bottom: 1px solid var(--gray);
 }
-header ul {
+header .row-1 ul {
     display: flex;
     align-items: flex-end;
     gap: 24px;
@@ -19,10 +21,65 @@ header ul {
     margin: 0;
     padding: 0;
 }
-header ul li {
+header .row-1 ul li {
     padding: 9px 12px;
     border-radius: 12px;
 }
-header ul .active{
+header .row-1 ul .active{
     background: var(--secondary);
+}
+header .row-2 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 24px 80px;
+    height: auto;
+}
+header .row-2 ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    list-style-type: none;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+}
+header .row-2 ul li a {
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    background: var(--white);
+}
+.search-box {
+    position: relative;
+    width: 400px;
+    height: 44px;
+}
+.search-box svg {
+    position: absolute;
+    left: 4%;
+    top: 25%;
+}
+.search-box input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 14px 10px 42px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background: var(--white);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.search-box input::placeholder {
+    color: var(--light-black);
+    letter-spacing: 0.024px;
 }
