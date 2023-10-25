@@ -1,8 +1,13 @@
 :root {
     --white: #FFF;
     --gray: #EDEDED;
+    --primary: #116466;
     --secondary: #D2E9E3;
+    --text-primary: #264143;
     --light-black: #757575;
+}
+body {
+    font-family: 'Poppins', sans-serif;
 }
 header .row-1 {
     display: flex;
@@ -24,6 +29,8 @@ header .row-1 ul {
 header .row-1 ul li {
     padding: 9px 12px;
     border-radius: 12px;
+    font-size: 16px;
+    font-style: normal;
 }
 header .row-1 ul .active{
     background: var(--secondary);
@@ -54,7 +61,10 @@ header .row-2 ul li a {
     border-radius: 6px;
     border: 1px solid var(--secondary);
     cursor: pointer;
+    color: var(--text-primary);
     background: var(--white);
+    font-size: 14px;
+    font-style: normal;
 }
 .search-box {
     position: relative;
@@ -78,8 +88,44 @@ header .row-2 ul li a {
     border: 1px solid var(--gray);
     background: var(--white);
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    font-style: normal;
 }
 .search-box input::placeholder {
     color: var(--light-black);
     letter-spacing: 0.024px;
+}
+.banner {
+    text-align: center;
+    height: auto;
+    margin: 40px 248px;
+    font-size: 34px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.085px;
+}
+.getting-started {
+    position: relative;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.getting-started svg {
+    position: absolute;
+    left: 78%;
+    top: 25%;
+}
+.primary-btn {
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 32px 12px 16px;
+    color: var(--white);
+    background: var(--primary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.175px;
+    text-transform: uppercase;
 }
